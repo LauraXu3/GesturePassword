@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-port" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>手势密码</title>
+    <style>
+        body,html {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .gesture {
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gesture"></div>
+<script src="gesture_password.js"></script>
+<script>
+    (function () {
+        var container = document.getElementsByClassName('gesture')[0];
+        var gesturePwd = new GesturePwd(container);
+        gesturePwd.init();
+    })();
+</script>
+</body>
+</html>
