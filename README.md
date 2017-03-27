@@ -13,4 +13,4 @@
   gesturePwd.init();
 
 ```
-##[demo]();
+##[demo]( https://lauraxu3.github.io/GesturePassword/index.html);
