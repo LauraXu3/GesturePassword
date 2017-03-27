@@ -14,6 +14,7 @@
 
 ```
 
-##效果
+## 效果
+
 [demo]( https://lauraxu3.github.io/GesturePassword/index.html)
 请在移动端视口下查看
