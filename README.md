@@ -17,4 +17,4 @@
 ## 效果
 
 [demo]( https://lauraxu3.github.io/GesturePassword/index.html)
-请在移动端视口下查看
+在浏览器中查看时请切换到移动端视口下查看，并F5刷新。
