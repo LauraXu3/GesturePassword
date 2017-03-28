@@ -5,10 +5,16 @@
 ## 使用
 
 ```
-1.下载c文件
-2.在html文件中引入<script src="https://github.com/LauraXu3/GesturePassword.git"></script>
+1.下载gesture_password.js文件
+2.在html文件中引入<script src="gesture_password.js"></script>
 3.创建GestruePwd实例，传入包裹手势密码界面的container节点，调用init()方法
-var container = document.getElementsByClassName('gesture')[0];
-var gesturePwd = new GesturePwd(container);
-gesturePwd.init();
+  var container = document.getElementsByClassName('gesture')[0];
+  var gesturePwd = new GesturePwd(container);
+  gesturePwd.init();
+
 ```
+
+## 效果
+
+[demo]( https://lauraxu3.github.io/GesturePassword/index.html)
+在浏览器中查看时请切换到移动端视口下查看，并F5刷新。
