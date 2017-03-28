@@ -27,9 +27,7 @@
                 }
             }
             this.ctx.clearRect(0, 0, this.width, this.height);
-
             for(var i=0;i < this.arr.length; i++) {
-                console.log(i);
                 this.drawCircle(this.arr[i].x,this.arr[i].y)
             }
 
@@ -110,7 +108,7 @@
         GesturePwd.prototype.verifyPwd = function (inputPwd) {
             var pwd = localStorage.getItem('GesturePwd');
             pwd || (this.text.innerHTML='请先设置密码');
-            pwd=JSON.parse(pwd)
+            pwd=JSON.parse(pwd);
             if(pwd.length != inputPwd.length) {
                 return false;
             }
@@ -143,10 +141,13 @@
                 e.preventDefault();
                 var position = self.getPosition(e);
                 for(var i=0; i < self.arr.length;i++) {
-                    if (Math.abs(position.x - self.arr[i].x)) {
+
+                    if ((Math.abs(position.x - self.arr[i].x)<self.r)
+                        &&(Math.abs(position.y - self.arr[i].y)<self.r)) {
                         self.touchFlag = true;
                         self.inputPoint.push(self.arr[i]);
                         self.restPoint.splice(i, 1);
+                        console.log(self.inputPoint);
                         break;
                     }
                 }
